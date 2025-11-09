@@ -1,0 +1,405 @@
+/* (Кнопки, иконки, навыки) */
+/* Section 1 */
+
+/* Аватарка */
+.avatar {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-label {
+  font-size: 14px;
+  color: #11366c; 
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: #0066ff;
+}
+
+.hero-content p {
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #0066ff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #0055cc;
+  transform: translateY(-3px);
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+/* Section 2 */
+
+/* Навыки */
+.skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  text-align: center;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: #0066ff;
+  border-radius: 4px;
+}
+
+
+.skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  text-align: center;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 140%; 
+  color: #020202;
+  max-width: 500px; 
+  margin-bottom: 30px;
+}
+
+.check-out {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6b6a6a;
+}
+
+
+/* Section 2   */
+
+.section-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skills-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #1B1B1B;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 14px;
+  color: #1a1313;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* Стили для тегов */
+.tag {
+  background: #1B1B1B;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 12px;
+}
+
+/* Стили для прогресс-баров */
+.progress-item {
+  margin-bottom: 20px;
+}
+
+.progress-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.progress-item span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.progress {
+  height: 100%;
+  background: #1B1B1B;
+  border-radius: 4px;
+}
+/* Skills Section 3   */
+/* Section 3 - Portfolio */
+.section-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  opacity: 0.25;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.portfolio h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #1B1B1B;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #1B1B1B;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* Основные стили контента карточек */
+.portfolio-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+  z-index: 2;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.portfolio-category {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.portfolio-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0 0 15px;
+}
+
+/* Стили для кнопок*/
+.portfolio-item .btn {
+  display: inline-block;
+  background: #FFFFFF;
+  color: #1B1B1B;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Section 4 */
+/* Section 4 - Experience */
+.experience .section-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1B1B1B;
+  opacity: 0.25;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.experience h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #1B1B1B;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.experience .section-description {
+  font-size: 16px;
+  color: #1B1B1B;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+.experience-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1B1B1B;
+}
+
+.experience-item p {
+  font-size: 14px;
+  color: #1B1B1B;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.experience-item .year {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1B1B1B;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/*SECTION 5*/
+
+/* ===== CONTACT SECTION ===== */
+
+/* Заголовки */
+.contact h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1B1B1B;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+
+/*Section 6 */
+.back-to-top {
+  /* Добавляем начальные стили для анимации появления */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Адаптивность футера */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 30px;
+    min-height: 300px;
+  }
+  
+  .footer .container {
+    gap: 40px;
+  }
+  
+  .footer-nav {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  .footer-org {
+    font-size: 28px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
+/* Плавная прокрутка */
+html {
+  scroll-behavior: smooth;
+}

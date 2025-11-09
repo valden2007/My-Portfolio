@@ -1,0 +1,226 @@
+@import url('/css/base.css');
+@import url('/css/components.css');
+@import url('/css/layout.css');
+@import url('/css/utilities.css');
+
+
+/*центрирование секции Experience */
+.experience .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  display: block !important;
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+}
+
+
+
+/*ТЁМНАЯ ТЕМА*/
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Шапка */
+body.dark-theme .header {
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+body.dark-theme .nav a {
+  color: #ffffff;
+}
+body.dark-theme .theme-toggle {
+  color: #ffffff;
+  background: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+body.dark-theme .hero {
+  background: #1e1e1e;
+}
+body.dark-theme .hero-content h1,
+body.dark-theme .hero-content p {
+  color: #ffffff;
+}
+body.dark-theme .highlight {
+  color: #0066ff;
+}
+body.dark-theme .check-out {
+  color: #ffffff;
+}
+body.dark-theme .social-icon {
+  background: #333;
+}
+body.dark-theme .social-icon:hover {
+  background: #555;
+}
+
+/* Секция Skills */
+body.dark-theme .skills {
+  background-color: #1e1e1e;
+}
+body.dark-theme .skills-header h2,
+body.dark-theme .skills-header p {
+  color: #ffffff;
+}
+body.dark-theme .tag {
+  background: #333;
+  color: #ffffff;
+}
+body.dark-theme .progress-bar {
+  background: #0101d9;
+}
+body.dark-theme .progress {
+  background: #0066ff;
+}
+
+/* Секция Portfolio */
+body.dark-theme .portfolio {
+  background: #1e1e1e;
+}
+body.dark-theme .portfolio-item {
+  background: #2d2d2d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+body.dark-theme .portfolio-content {
+  color: #ffffff;
+}
+body.dark-theme .btn {
+  background: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+/* Секция Experience */
+body.dark-theme .experience h2 {
+  color: #ffffff;
+}
+
+body.dark-theme .experience {
+  background-color: #2e2e2e;
+}
+body.dark-theme .experience-item {
+  background: #2d2d2d;
+  box-shadow: 0 4px 10px rgba(102, 100, 100, 0.5);
+}
+body.dark-theme .year {
+  color: #0066ff;
+}
+
+/* Контакты */
+body.dark-theme .contact-form {
+  background: #2d2d2d;
+}
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+  background: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+body.dark-theme .contact-form button {
+  background: #0066ff;
+  color: #ffffff;
+}
+
+/* Все ссылки */
+body.dark-theme a {
+  color: #0066ff;
+}
+body.dark-theme a:hover {
+  color: #0055cc;
+}
+
+/* Подзаголовки (PROJECTS, EXPERIENCE) */
+body.dark-theme .section-subtitle {
+  color: #bcb5b5;
+  opacity: 0.5;
+}
+
+/* Текстовое описание */
+body.dark-theme .section-description {
+  color: #cccccc;
+}
+
+/* Градиентные фоны (если есть) */
+body.dark-theme .hero-image::before {
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+}
+
+/* Плавный переход */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========== СЕКЦИЯ 4: EXPERIENCE — ТЁМНАЯ ТЕМА =========== */
+body.dark-theme .experience {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-theme .experience .container {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-theme .experience-item {
+  background: #2d2d2d !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .experience-item h3,
+body.dark-theme .experience-item p {
+  color: #ffffff !important;
+}
+
+body.dark-theme .year {
+  color: #0066ff !important; /* Синий цвет, как в макете */
+}
+
+/* =========== СЕКЦИЯ 5: CONTACT — ТЁМНАЯ ТЕМА =========== */
+body.dark-theme .contact {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .contact h2,
+body.dark-theme .contact-description {
+  color: #ffffff !important;
+}
+
+body.dark-theme .contact-item h4,
+body.dark-theme .contact-item p {
+  color: #ffffff !important;
+}
+
+body.dark-theme .contact-form {
+  background: #1e1e1e !important;
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+  background: #2d2d2d !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+body.dark-theme .contact-form input:focus,
+body.dark-theme .contact-form textarea:focus {
+  border-color: #0066ff !important;
+}
+
+body.dark-theme .submit-btn {
+  background: #0066ff !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .form-note {
+  color: #aaaaaa !important;
+}
+
+body.dark-theme .hint {
+  color: #888888 !important;
+}
