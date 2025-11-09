@@ -27,7 +27,7 @@
 }
 
 /* Section 3 */
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .portfolio-container {
     width: 100%;
     height: auto;
