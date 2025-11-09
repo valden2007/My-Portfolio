@@ -1,6 +1,6 @@
 /* (Адаптивность и вспомогательные классы) */
 /* Section 1 */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -27,7 +27,7 @@
 }
 
 /* Section 3 */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .portfolio-container {
     width: 100%;
     height: auto;
@@ -35,7 +35,7 @@
   }}
 
   /*Section 5 */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .contact-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -51,7 +51,7 @@
 }
 
 /* Section 6 */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .footer-nav {
     flex-direction: column;
     gap: 15px;
