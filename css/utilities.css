@@ -1,68 +1,193 @@
-/*АДАПТИВНОСТЬ*/
+/* БАЗОВЫЕ АДАПТИВНЫЕ ПРАВИЛА */
+* {
+    box-sizing: border-box;
+}
 
-@media (max-width: 768px) {
-  /* Hero Section */
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 0;
-  }
-  .hero-image {
-    order: -1;
-    width: 250px;
-    margin-bottom: 30px;
-  }
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  /* Skills Section */
-  .skills-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .progress-item h3 {
-    font-size: 18px;
-  }
-
-  /* Portfolio Section */
-  .portfolio-container {
-    width: 100% !important;
-    height: auto !important;
-    position: relative;
-  }
-  .portfolio-grid {
-    grid-template-columns: 1fr !important;
-    gap: 20px;
-  }
-  .portfolio-item {
-    position: relative !important;
-    width: 100% !important;
-    height: auto !important;
-    top: auto !important;
-    left: auto !important;
-    margin-bottom: 20px;
-  }
-  .portfolio-item img {
+img {
+    max-width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
-  }
+}
 
-  /* Contact Section */
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .contact-form {
-    padding: 20px;
-  }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-  /* Footer */
-  .footer-nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .footer-middle {
-    padding: 0 20px;
-  }
+/* МЕДИА-ЗАПРОСЫ ДЛЯ АДАПТИВНОСТИ */
+
+/* Планшеты и маленькие ноутбуки (769px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Планшеты (768px и меньше) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+        gap: 25px;
+    }
+    
+    .hero-image {
+        order: -1;
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    /* Skills Section */
+    .skills-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .progress-item h3 {
+        font-size: 16px;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .portfolio-item {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+        margin-bottom: 15px;
+    }
+    
+    .portfolio-item img {
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    /* Footer */
+    .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-middle {
+        padding: 0 15px;
+    }
+}
+
+/* Мобильные телефоны (480px и меньше) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero {
+        padding: 20px 0;
+    }
+    
+    .hero-image {
+        width: 150px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .portfolio-grid {
+        gap: 10px;
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+    
+    /* Навигация для мобильных */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Большие экраны (1200px и больше) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Ориентация ландшафт для мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        padding: 20px 0;
+    }
+    
+    .hero-image {
+        order: 0;
+        width: 120px;
+        margin: 0;
+    }
 }
