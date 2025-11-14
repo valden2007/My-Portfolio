@@ -4,9 +4,8 @@
 
 /* Аватарка */
 .avatar {
-  width: 90%;
+  width: 100%;
   border-radius: 20px;
-  padding-right: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
