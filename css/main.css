@@ -1,7 +1,7 @@
-@import url('./css/base.css');
-@import url('./css/components.css');
-@import url('./css/layout.css');
-@import url('./css/utilities.css');
+@import url('/css/base.css');
+@import url('/css/components.css');
+@import url('/css/layout.css');
+@import url('/css/utilities.css');
 
 
 /*центрирование секции Experience */
@@ -25,12 +25,13 @@ body.dark-theme {
 
 /* Шапка */
 body.dark-theme .header {
-  background: #1e1e1e;
-  border-bottom: 1px solid #333;
+  background: #292828;
+  border-bottom: 1px solid #1118e1;
 }
 body.dark-theme .nav a {
   color: #ffffff;
 }
+
 body.dark-theme .theme-toggle {
   color: #ffffff;
   background: #333;
@@ -38,11 +39,12 @@ body.dark-theme .theme-toggle {
   border-radius: 4px;
   cursor: pointer;
 }
-
 /* Hero Section */
 body.dark-theme .hero {
   background: #1e1e1e;
 }
+
+
 body.dark-theme .hero-content h1,
 body.dark-theme .hero-content p {
   color: #ffffff;
@@ -54,7 +56,7 @@ body.dark-theme .check-out {
   color: #ffffff;
 }
 body.dark-theme .social-icon {
-  background: #333;
+  background: #5353ef;
 }
 body.dark-theme .social-icon:hover {
   background: #555;

@@ -1,64 +1,49 @@
-/* (Адаптивность и вспомогательные классы) */
-/* Section 1 */
+/* utilities.css — Адаптивность */
 @media (max-width: 768px) {
-  .hero {
+  /* Общий контейнер */
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+  /* Hero Section */
+.hero {
     flex-direction: column;
     text-align: center;
-  }
-
-  .hero-image {
+}
+.hero-image {
     order: -1;
     width: 250px;
-  }
-/* Section 2 */
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-@media (max-width: 480px) {
-  .skills-grid {
+  /* Skills Section */
+.skills-content {
     grid-template-columns: 1fr;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
+}
+  /* Portfolio Section */
+.portfolio-container {
+    width: 100% !important;
+    height: auto !important;
+}
+.portfolio-grid {
+    grid-template-columns: 1fr !important;
+}
+.portfolio-item {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+}
+  /* Experience Section */
+.experience-grid {
+    grid-template-columns: 1fr !important;
+}
+.experience-item {
+    width: 100% !important;
 }
 
-/* Section 3 */
-@media (max-width: 1440px) {
-  .portfolio-container {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }}
-
-  /*Section 5 */
-@media (max-width: 768px) {
-  .contact-content {
+  /* Contact Section */
+.contact-content {
     grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  
-  .contact-header {
-    margin-bottom: 40px;
-  }
-  
-  .contact-form {
-    padding: 30px 20px;
-  }
 }
-
-/* Section 6 */
-@media (max-width: 480px) {
-  .footer-nav {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-  
-  .footer-org {
-    font-size: 24px;
-  }
 }
