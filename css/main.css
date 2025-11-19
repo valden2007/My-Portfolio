@@ -98,7 +98,9 @@ body.dark-theme .btn {
   border: 1px solid #555;
 }
 
-h2{color: azure;}
+body.dark-theme .portfolio h2 {
+  color: #0066ff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)}
 
 /* Секция Experience */
 body.dark-theme .experience h2 {
@@ -172,7 +174,7 @@ body.dark-theme .experience .container {
 body.dark-theme .experience-item {
   background: #2d2d2d !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(21, 32, 239, 0.5);
 }
 
 body.dark-theme .experience-item h3,
@@ -208,7 +210,7 @@ body.dark-theme .contact-form input,
 body.dark-theme .contact-form textarea {
   background: #2d2d2d !important;
   color: #ffffff !important;
-  border: 1px solid #444 !important;
+  border: 1px solid #181ed5 !important;
 }
 
 body.dark-theme .contact-form input:focus,
@@ -227,4 +229,28 @@ body.dark-theme .form-note {
 
 body.dark-theme .hint {
   color: #888888 !important;
+}
+
+/* Цвет кнопки contaсt */
+body.dark-theme .btn.contact {
+  background: #0066ff !important; /* Яркий синий фон */
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.3); /* Тень для объема */
+  transition: all 0.3s ease;
+}
+
+body.dark-theme .btn.contact:hover {
+  background: #0055cc !important;
+  transform: translateY(-2px);
+}
+
+body.dark-theme .form-group label {
+  color: #e0e0e0 !important;
+}
+body.dark-theme .contact-form input::placeholder,
+body.dark-theme .contact-form textarea::placeholder {
+  color: #b0b0b0 !important;
+}
+body.dark-theme .hint {
+  color: #909090 !important;
 }
