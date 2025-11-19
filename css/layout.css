@@ -1,7 +1,22 @@
 /* SECTION 1 */
-.header{
+.header {
+  position: fixed;
+  top: 0;
+  left: 90px;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  max-width: 1440px;
   border-radius: 15px;
+  margin: 0 auto;
 }
+
+.container {
+  padding-top: 60px; 
+}
+
 .hero {
   width: 1440px;
   display: flex;
